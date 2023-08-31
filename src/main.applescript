@@ -2,7 +2,7 @@ global mainCachePath, userCachePath, userHomePath, cleanUserSize, countFileUser,
 
 set logPath to "/tmp/clean.log"
 set homeFolderPath to "/Users/" & short user name of (system info)
-set paths to {"/Library/Caches", homeFolderPath & "/Library/Caches", homeFolderPath & "/.cache"}
+set paths to {"/Library/Caches", homeFolderPath & "/.cache", homeFolderPath & "/.gradle/caches", homeFolderPath & "/Library/Caches", homeFolderPath & "/Library/CoreSimulator/Caches"}
 
 on fnDate()
 	set currentDate to current date
